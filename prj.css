@@ -1,0 +1,162 @@
+
+ body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff0f5; /* rose clair */
+      color: #444;
+    }
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+    /* --- HEADER AVEC IMAGE --- */
+    header {
+      background-image: url("c:\Users\IMANE\Downloads\Valentino Born in Roma Extradose Donna est mon….jpeg");
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(214, 51, 132, 0.4); /* rose overlay */
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* Section histoire */
+    .histoire {
+      background-color: #ffe6f0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .histoire p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.7;
+      font-size: 25px;
+    }
+
+    /* Section produits */
+    .produits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+     .produit {
+    width: 350px;       
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+ 
+    .produit img {
+    width: 100%;         
+    height: 350px;       
+    object-fit: cover;   
+    border-radius: 10px;
+    }
+
+
+    .produit:hover {
+      transform: scale(1.05);
+    }
+
+   
+
+    .produit h3 {
+      color: #d63384;
+      margin: 10px 0 5px;
+    }
+
+    .produit p {
+      color: #555;
+      margin: 0;
+    }
+
+    /* Formulaire */
+    .formulaire {
+      background-color: white;
+      padding: 25px;
+      margin: 50px auto;
+      width: 90%;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .formulaire h2 {
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+
+    .formulaire input, .formulaire button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .formulaire button {
+      background-color: #d63384;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .formulaire button:hover {
+      background-color: #b51e6d;
+    }
+
+    .resultat {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #d63384;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe6f0;
+      color: #555;
+    }
+    h2{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
